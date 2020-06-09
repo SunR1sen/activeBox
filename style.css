@@ -657,6 +657,26 @@ p {
     .social {
         justify-content: center;
     }
+
+    .social__item:not(:last-child) {
+        margin-right: 12px;
+    }
+
+    /* Reviews */
+    .reviews__photo {
+        width: 100%;
+    }
+
+    .reviews__img {
+        right: -15px;
+    }
+
+    .reviews__content {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
 }
 
 
@@ -723,6 +743,21 @@ p {
     .works__item {
         min-width: 100%;
         height: 300px;
+        border-right: 0;
     }
 
+    /* Reviews */
+    .reviews__img {
+        right: -155px;
+    }
+
+
+    /* Footer */
+    .footer__block {
+        width: 100%;
+    }
+
+    .footer__block:not(:last-child) {
+        margin-bottom: 40px;
+    }
 }
