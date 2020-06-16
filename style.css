@@ -52,6 +52,12 @@ p {
     z-index: 1000;
 }
 
+.header.fixed {
+    position: fixed;
+    background-color: #2a2d48;
+    height: 68px;
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -611,6 +617,23 @@ p {
     /* Nav */
     .nav {
         display: none;
+        flex-direction: column;
+        width: 100%;
+
+        background-color: #2a2d48;
+        text-align: right;
+
+        position: absolute;
+        right: 0;
+        top: 100%;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 9px 15px;
     }
 
     /* Burger */
