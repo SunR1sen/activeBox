@@ -47,7 +47,9 @@ $(function() {
     navToggle.on("click", function(event) {
         event.preventDefault();
 
-        nav.toggleClass("show")        ;
+        nav.toggleClass("show");
+        $(".burger").toggleClass("active");
+        
     });
 
 

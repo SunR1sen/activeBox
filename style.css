@@ -571,6 +571,7 @@ p {
     background: none;
     border: 0;
     cursor: pointer;
+    outline: none;
 }
 
 .burger__item {
@@ -606,6 +607,26 @@ p {
 
 .burger__item:after {
     bottom: -8px;
+}
+
+.burger.active {
+    transform: rotate(45deg);
+
+    transition: transform 0.2s linear;
+}
+
+.burger.active
+.burger__item:before {
+    transform: rotate(-90deg) translate(-7px, 0px);
+
+    transition: transform 0.2s linear;
+}
+
+.burger.active
+.burger__item:after {
+    transform: rotate(-90deg) translate(7px, 0px);
+
+    transition: transform 0.2s linear;
 }
 
 
